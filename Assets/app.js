@@ -126,62 +126,40 @@
 // }
 // console.log("E:", i, j, k);
 
-// var size = prompt("What Would You Like! Small, Medium, Large");
-
-// if (size == "Small") {
-//   alert(
-//     "This flavour is valid for Small: " + " Lychee" + " Lemonade" + " Pineapple"
-//   );
-//   var flavour = prompt("Input A Flavour");
-
-//   if (flavour == "Lychee" || flavour == "Lemonade" || flavour == "Pineapple") {
-//     alert(120);
-//   }
-// } else if (size == "Medium") {
-//   alert("This flavour is valid for Medium: " + " Lime" + " Orange" + " Apple");
-//   var flavour = prompt("Input A Flavour");
-
-//   if (flavour == "Lime" || flavour == "Orange" || flavour == "Apple") {
-//     alert(160);
-//   }
-// } else if (size == "Large") {
-//   alert(
-//     "This flavour is valid for Large: " +
-//       " GreenApple" +
-//       " Blueberry" +
-//       " Peach"
-//   );
-//   var flavour = prompt("Input A Flavour");
-
-//   if (flavour == "GreenApple" || flavour == "Blueberry" || flavour == "Peach") {
-//     alert(200);
-//   }
-// } else {
-//   alert("Invalid size");
-// }
-
 var size = prompt("What Would You Like! Small, Medium, Large");
 
-var validFlavours = {
-  Small: ["Lychee", "Lemonade", "Pineapple"],
-  Medium: ["Lime", "Orange", "Apple"],
-  Large: ["GreenApple", "Blueberry", "Peach"],
-};
-
-var prices = {
-  Small: 120,
-  Medium: 160,
-  Large: 200,
-};
-
-if (validFlavours[size]) {
+if (size == "Small") {
   alert(
-    "This flavour is Available " + size + ": " + validFlavours[size].join(", ")
+    "This flavour is valid for Small: " +
+      " Lychee," +
+      " Lemonade," +
+      " Pineapple"
   );
   var flavour = prompt("Input A Flavour");
 
-  if (validFlavours[size].includes(flavour)) {
-    alert(prices[size]);
+  if (flavour == "Lychee" || flavour == "Lemonade" || flavour == "Pineapple") {
+    alert(120);
+  }
+} else if (size == "Medium") {
+  alert(
+    "This flavour is valid for Medium: " + " Lime," + " Orange," + " Apple"
+  );
+  var flavour = prompt("Input A Flavour");
+
+  if (flavour == "Lime" || flavour == "Orange" || flavour == "Apple") {
+    alert(160);
+  }
+} else if (size == "Large") {
+  alert(
+    "This flavour is valid for Large: " +
+      " GreenApple," +
+      " Blueberry," +
+      " Peach"
+  );
+  var flavour = prompt("Input A Flavour");
+
+  if (flavour == "GreenApple" || flavour == "Blueberry" || flavour == "Peach") {
+    alert(200);
   }
 } else {
   alert("Invalid size");
