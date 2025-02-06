@@ -33,7 +33,7 @@ body {
 .button {
     display: inline-block;
     padding: 10px;
-    background: #007bff;
+    background: purple;
     color: white;
     border: none;
     border-radius: 5px;
@@ -41,5 +41,5 @@ body {
     margin-top: 10px;
 }
 .button:hover {
-    background: #0056b3;
+    background: black;
 }
